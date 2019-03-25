@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterCompanyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarRegisterPost"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        app:title="@string/register_post"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.wayup.view.CusRegularTextView
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:text="@string/info_profile"
+                android:drawableLeft="@drawable/ic_point"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtEmailReCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:drawablePadding="7dp"
+                android:hint="@string/email_company"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edtNameReCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="7dp"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+
+
+            <com.example.wayup.view.CusRegularTextView
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:text="@string/company_info"
+                android:drawableLeft="@drawable/ic_point"
+                android:layout_height="wrap_content" />
+
+
+            <RadioGroup
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--<FrameLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <RadioButton
+                        android:checked="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/radExistsCompany"
+                        android:text="@string/exists_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                <!--</FrameLayout>-->
+                <!--<FrameLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/radCreateCompany"
+                        android:text="@string/create_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                <!--</FrameLayout>-->
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lnExists"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerCompany"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnCreate"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtNameCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_name_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/name_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtTypeCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_type_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/type_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtMemberCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_member_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/member_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtCountryCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_country_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/country_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtTimeWorkCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_time_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/time_work_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtAddressCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_address_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/address_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtContactCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_contact_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/contact_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtOTCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_ot_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/ot_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtSloganCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_slogan_comapny"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/slogan_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtDescCompanyReCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:drawableLeft="@drawable/ic_desc_company"
+                    android:drawablePadding="7dp"
+                    android:hint="@string/desc_company"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/btnChooseLogoCompany"
+                    android:textColor="#969696"
+                    android:text="@string/logo_company"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_icon_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imgLogoCompany"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:id="@+id/btnChooseImageCompany"
+                    android:textColor="#969696"
+                    android:text="@string/image_company"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_icon_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imgImageCompany"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnRegisterCompany"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnSavePass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_background_ver2"
+                    android:text="@string/register"
+                    android:textColor="@color/white" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnSavePass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_button_ver2"
+                    android:text="@string/cancel_ver1"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

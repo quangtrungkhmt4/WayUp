@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarComment"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:title="@string/comment"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"></android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lvCommentCompany"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="120dp"
+        android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edtComment"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:background="@drawable/spinner_background"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:id="@+id/btnSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/comment"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

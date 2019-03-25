@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imgComment"
+                android:layout_marginTop="5dp"
+                android:src="@color/colorPrimary"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.wayup.view.CusBoldTextView
+                android:id="@+id/tvNameComment"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="@string/name"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_height="wrap_content" />
+
+            <com.example.wayup.view.CusRegularTextView
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+                android:layout_height="wrap_content" />
+            <com.example.wayup.view.CusRegularTextView
+                android:id="@+id/tvTimeComment"
+                android:layout_width="wrap_content"
+                android:text="@string/input"
+                android:layout_gravity="right"
+                android:padding="5dp"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

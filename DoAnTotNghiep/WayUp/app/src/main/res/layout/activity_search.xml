@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSearch"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lnSearchProvince"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_background"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        app:shimmer_duration="800"
+        android:id="@+id/shimmerFrameLayoutSearch"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/loading_job_layout" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/lvJobSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        <com.example.wayup.view.CusBoldTextView
+            android:layout_width="wrap_content"
+            android:text="@string/list_empty"
+            android:layout_gravity="center"
+            android:id="@+id/tvEmpty"
+            style="?android:attr/textAppearanceLarge"
+            android:textColor="#AAAAAA"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.JobFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lvJobSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        <com.example.wayupmanagement.view.CusBoldTextView
+            android:layout_width="wrap_content"
+            android:text="@string/list_empty"
+            android:layout_gravity="center"
+            android:id="@+id/tvEmpty"
+            style="?android:attr/textAppearanceLarge"
+            android:textColor="#AAAAAA"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnAddJob"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

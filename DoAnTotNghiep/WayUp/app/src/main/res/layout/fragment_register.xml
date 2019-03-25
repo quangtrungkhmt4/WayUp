@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register"
+    tools:context=".fragment.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logoLogin"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_logo" />
+
+            <EditText
+                android:id="@+id/edtEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoLogin"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:drawablePadding="7dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/edtPassRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtEmailRegister"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="7dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="15dp" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/edtRePassRegister"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/edtPassRegister"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:background="@drawable/edt_background"-->
+                <!--android:drawableLeft="@drawable/ic_lock_black_24dp"-->
+                <!--android:drawablePadding="7dp"-->
+                <!--android:hint="@string/re_pass"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:padding="15dp" />-->
+
+            <EditText
+                android:id="@+id/edtNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPassRegister"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="7dp"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtNameRegister"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

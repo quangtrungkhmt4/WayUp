@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivityAnimation"
+        parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">
+            @anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">
+            @anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">
+            @anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">
+            @anim/activity_close_exit</item>
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="DialogTitleText">@string/wait</item>
+        <item name="DialogSpotColor">@android:color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+</resources>

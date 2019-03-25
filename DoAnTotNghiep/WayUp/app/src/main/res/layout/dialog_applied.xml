@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.wayup.view.CusBoldTextView
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvTitleJobDialogApply"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:text="@string/list_applied"
+            android:padding="10dp"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+            <ListView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lvApplied"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+            <com.example.wayup.view.CusBoldTextView
+                android:layout_width="wrap_content"
+                android:text="@string/list_empty"
+                android:layout_gravity="center"
+                android:id="@+id/tvEmpty"
+                style="?android:attr/textAppearanceLarge"
+                android:textColor="#AAAAAA"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

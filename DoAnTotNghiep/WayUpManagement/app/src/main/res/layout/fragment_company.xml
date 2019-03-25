@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/imgLargeImageCompanyInfo"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentTop="true" />
+                    <ImageView
+                        android:background="@color/white"
+                        android:id="@+id/imLogoCompanyInfo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                </RelativeLayout>
+
+
+                <com.example.wayupmanagement.view.CusBoldTextView
+                    android:id="@+id/tvNameCompanyInfo"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/lnInfo"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvAddressCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvCountryCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_country"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvTypeCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_type"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvMemberCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_member"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvTimeForWorkCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_timework"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvOTCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_ot"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/apply"
+                        android:id="@+id/tvContactCompanyInfo"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_mail_24dp"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#E0E0E0"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/info"
+                        android:padding="5dp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_info"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:text="@string/info"
+                        android:id="@+id/tvCompanyInfo"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#E0E0E0"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnEditCompany"
+            android:src="@drawable/ic_create_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</LinearLayout>

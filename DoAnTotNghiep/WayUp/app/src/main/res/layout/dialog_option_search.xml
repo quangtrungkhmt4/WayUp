@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#00ffffff"
+    android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSearchWithProvince"
+            android:layout_margin="15dp"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_province"
+            style="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/search_province"
+            android:background="@drawable/btn_background_ver1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSearchWithLanguage"
+            android:layout_margin="15dp"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_language"
+            style="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/search_language"
+            android:background="@drawable/btn_background_ver2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSearchWithLevel"
+            android:layout_margin="15dp"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_filter"
+            style="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/search_level"
+            android:background="@drawable/btn_background_ver3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSearchWithTag"
+            android:layout_margin="15dp"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_tag"
+            style="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/search_tag"
+            android:background="@drawable/btn_background_ver4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

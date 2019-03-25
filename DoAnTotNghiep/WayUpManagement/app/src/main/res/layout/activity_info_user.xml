@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoUserActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarInfoUser"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        app:title="@string/info_user"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:id="@+id/imgAvatarInfo"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp" />
+
+            <com.example.wayupmanagement.view.CusBoldTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvNameProfile"
+                android:layout_marginTop="10dp"
+                android:text="@string/name"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/email"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvMailProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/email"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/phone"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvPhoneProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/phone"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/gender"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvGenderProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/gender"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/birthday"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvBirthdayProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/birthday"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/skype"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvSkypeProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/skype"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/address"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvAddressProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/address"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/education"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvEducationProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/education"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/exp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvExpProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/exp"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/hard_skill"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvHardSkillProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hard_skill"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/soft_skill_v2"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvSoftSkillProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/soft_skill_v2"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/info"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvInfoProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/info"
+                    android:padding="2dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.wayupmanagement.view.CusRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/target"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:id="@+id/tvTargetProfile"
+                    android:layout_width="wrap_content"
+                    android:text="@string/target"
+                    android:padding="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#BBBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

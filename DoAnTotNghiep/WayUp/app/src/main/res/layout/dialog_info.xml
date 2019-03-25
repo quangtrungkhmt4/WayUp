@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.wayup.view.CusBoldTextView
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/tvTitleJobDialogApply"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:text="@string/about_creative"
+            android:padding="10dp"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content" />
+
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:text="Họ và tên: Lê Quang Trung"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_width="wrap_content"
+            android:text="Giới tính: Nam"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_width="wrap_content"
+            android:text="Học vấn: Đại học Công Nghiệp Hà Nội"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_width="wrap_content"
+            android:text="Chuyên ngành: Khoa học máy tính"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_width="wrap_content"
+            android:text="Lớp: Khoa học máy tính 4"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+        <com.example.wayup.view.CusRegularTextView
+            android:layout_width="wrap_content"
+            android:text="Mã sinh viên: 1041060304"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

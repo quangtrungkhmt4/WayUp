@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EditJobActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarEditJob"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        app:title="@string/update_job"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/title"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edtTitleEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/info"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtInfoEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/address"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtAddressEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/estimatetime"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtEstimatetimeEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/salary"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtSalaryEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/hard_skill"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtSkillEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_width="wrap_content"
+                android:text="@string/fast_info"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtFastInfoEditJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnUpdateJob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnSavePass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_background_ver2"
+                    android:text="@string/update"
+                    android:textColor="@color/white" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnSavePass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_button_ver2"
+                    android:text="@string/cancel_ver1"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

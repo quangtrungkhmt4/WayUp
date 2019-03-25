@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/imLogoJob"
+                android:src="@color/colorPrimaryDark"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <com.example.wayupmanagement.view.CusBoldTextView
+                android:text="@string/email"
+                android:padding="5dp"
+                android:lines="2"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:id="@+id/tvTitleJob"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:text="@string/email"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvFastInfo"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:text="@string/email"
+                android:padding="5dp"
+
+                android:id="@+id/tvStatus"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

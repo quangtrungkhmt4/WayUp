@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserManagerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnHr"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imShowHr"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hr"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.example.wayupmanagement.view.CustomListView
+                android:divider="@null"
+                android:id="@+id/lvHr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lnUser"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imShowUser"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/user"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.example.wayupmanagement.view.CustomListView
+                android:divider="@null"
+                android:id="@+id/lvUser"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lnLock"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imShowLock"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.example.wayupmanagement.view.CusRegularTextView
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lock"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.example.wayupmanagement.view.CustomListView
+                android:divider="@null"
+                android:id="@+id/lvLock"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

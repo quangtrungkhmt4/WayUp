@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.wayupmanagement.view.CusBoldTextView
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvTitleJobDialogApply"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:text="@string/vote_apply"
+            android:padding="10dp"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:text="@string/vote_point"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/edtVotePoint"
+                android:layout_gravity="center_vertical"
+                android:maxLength="2"
+                android:background="@drawable/spinner_background"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <com.example.wayupmanagement.view.CusRegularTextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:text="/10"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnVote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/vote"
+                android:textColor="@color/white" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button_ver2"
+                android:text="@string/skip"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

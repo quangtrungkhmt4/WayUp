@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.wayup.view.CusBoldTextView
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/tvTitleJobDialogApply"
+            android:layout_width="match_parent"
+            android:text="@string/search"
+            android:padding="10dp"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content" />
+
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radMapSkill"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Kỹ năng"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/radMapLevel"
+                android:padding="5dp"
+                android:text="Trình độ"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/radMapTag"
+                android:padding="5dp"
+                android:text="Tag"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerMapSearch"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/spinner_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+
+        <Button
+            android:id="@+id/btnConfirmMapSearch"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            style="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/confirm"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_background_ver1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
